@@ -5,156 +5,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodrigo Dias</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+        <div class="menu">
+                    <a href="#sobre">Sobre mim</a></li><br>
+                    <a href="#projetos">Projetos</a></li><br>
+                    <a href="#habilidades">Habilidades e tecnologias</a></li><br>
+                    <a href="#contato">Contato</a></li><br>
+                    <a href="https://br.pinterest.com/rodrigotabuas/" target="_blank">Pinterest</a></li>
+        </div>
+
+    <div class="content">
         <h1>Rodrigo Dias</h1>
 
-        <nav> <!-- Seção de navegação do site-->
-            <ul> <!-- Lista não ordenada para links do nosso menu-->
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades e tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="https://br.pinterest.com/rodrigotabuas/" target="_blank">Pinterest</a></li>
-            </ul>
-        </nav>
-    </header>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
 
-    <section id="sobre">
-        <h2>Sobre mim</h2>
+            <img src="https://i.pinimg.com/236x/46/c7/ed/46c7ed43c1ec795c83d0a0c64134b60e.jpg"
+                alt="Imagem de foto de perfil" title="imagem de perfil" class="gorila">
+            <p class="sub-gorila">Imagem meramente ilustrativa</p>
 
-        <img src="https://i.pinimg.com/236x/46/c7/ed/46c7ed43c1ec795c83d0a0c64134b60e.jpg"
-            alt="Imagem de foto de perfil" title="imagem de perfil">
-        <p>Imagem meramente ilustrativa</p>
-        <article>
+            <article>
 
-            <p>
-                Olá! Eu sou o Rodrigo. Estou aprendendo conceitos básicos de front-end e utilizando esta página para
-                praticar.
-            </p>
+                <p>
+                    Olá! Eu sou o Rodrigo. Estou aprendendo conceitos básicos de front-end e utilizando esta página para
+                    praticar.
+                </p>
 
-        </article>
+            </article>
 
-        <aside>
+            <aside class="skills">
 
-            <h3>Habilidades</h3>
+                <h3>Habilidades</h3>
+                
+                <p>HTML <br>
+                    CSS <br>
+                    JavaScript</p>
+                
+            </aside>
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-
-        </aside>
-
-    </section>
-
-    <section id="projetos">
-
-        <h2>Projetos</h2>
-
-        <article>
-            <h3>Portifólio</h3>
-
-            <p>
-                Este é o primeiro site que desenvolvi durante meus estudos de front-end.
-            </p>
-        </article>
-
-    </section>
-
-    <section id="habilidades">
-
-        <h2>Habilidades e tecnologias</h2>
-
-        <table>
-
-            <thead>
-                <tr>
-                    <th>Tecnologia</th>
-                    <th>Nível</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <th>HTML</th>
-                    <th>Iniciante</th>
-                    <th>Capaz de criar estruturas de páginas da web semânticas e responsivas.</th>
-                </tr>
-
-                <tr>
-                    <th>CSS</th>
-                    <th>Intermediário</th>
-                    <th>Experiência com flexbox, grid e animações CSS.</th>
-                </tr>
-
-                <tr>
-                    <th>JavaScript</th>
-                    <th>Básico</th>
-                    <th>Desenvolvimento de scripts do lado do cliente para interações.</th>
-                </tr>
-            </tbody>
-
-        </table>
-
-
-    </section>
-
-    <footer>
-        <p>Direitos reservado a Rodrigo Dias</p>
-
-        <section id="contato">
-            <h2>Contato</h2>
-
-            <p>
-                Tem um projeto em mente? Entre em contato.
-            </p>
-
-            <form action="">
-
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" required><br>
-
-                <label for="email">E-mail: </label>
-                <input type="email" name="email" id="email" required><br>
-
-                <label for="telefone">Telefone: </label>
-                <input type="tel" name="telefone" id="telefone"><br><br>
-
-                <label for="assunto">Assunto: </label>
-                <select name="assunto" id="assunto">
-                    <option value="orçamento">Orçamento</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="outro">Outro</option>
-                </select>
-
-                <br><br>
-
-                <label for="mensagem">Mensagem: </label>
-                <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea>
-
-                <br><br>
-
-                <input type="checkbox" name="insricao" id="insricao">
-                <label for="insricao">Deseja receber minha newsletter? Fique por dentro</label><br><br>
-
-                <input type="submit" value="Enviar mensagem">
-
-            </form>
-
-            <br>
-
-            <address>
-                E-mail: <a href="mailto:rodrigo.d.leber@gmail.com">rodrigo.d.leber@gmail.com</a>
-                <br>
-                Telefone: <a href="tel:+55479999999">(47) 99999-9999</a>
-            </address>
         </section>
-    </footer>
+
+        <div class="space"></div>
+
+        <section id="projetos">
+
+            <h2>Projetos</h2>
+
+            <div class="small-space"></div>
+
+            <article>
+                <h3>Portifólio</h3>
+
+                <p>
+                    Este é o primeiro site que desenvolvi durante meus estudos de front-end.
+                </p>
+            </article>
+
+        </section>
+
+        <div class="space"></div>
+
+        <section id="habilidades">
+
+            <h2>Habilidades e tecnologias</h2>
+
+            <div class="small-space"></div>
+
+            <table class="tabela">
+
+                <thead>
+                    <tr>
+                        <th>Tecnologia</th>
+                        <th>Nível</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>HTML</th>
+                        <th>Iniciante</th>
+                        <th>Capaz de criar estruturas de páginas da web semânticas e responsivas.</th>
+                    </tr>
+
+                    <tr>
+                        <th>CSS</th>
+                        <th>Intermediário</th>
+                        <th>Experiência com flexbox, grid e animações CSS.</th>
+                    </tr>
+
+                    <tr>
+                        <th>JavaScript</th>
+                        <th>Básico</th>
+                        <th>Desenvolvimento de scripts do lado do cliente para interações.</th>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+        </section>
+
+
+
+        <footer>
+
+            <section id="contato">
+                <h2>Contato</h2>
+
+                <div class="small-space"></div>
+
+                <p>Tem um projeto em mente? Entre em contato.</p>
+
+                <form action="">
+
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" required><br>
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" required><br>
+
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="telefone"><br><br>
+
+                    <label for="assunto">Assunto: </label>
+                    <select name="assunto" id="assunto">
+                        <option value="orçamento">Orçamento</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea>
+
+                    <br><br>
+
+                    <input type="checkbox" name="insricao" id="insricao">
+                    <label for="insricao">Deseja receber minha newsletter? Fique por dentro</label><br><br>
+
+                    <input type="submit" value="Enviar mensagem">
+
+                </form>
+
+                <br>
+
+                <div class="endereco">
+                <address>
+                    E-mail: <a href="mailto:rodrigo.d.leber@gmail.com">rodrigo.d.leber@gmail.com</a>
+                    <br>
+                    Telefone: <a href="tel:+55479999999">(47) 99999-9999</a>
+                </address>
+            </section>
+
+            <p>Direitos reservado a Rodrigo Dias.</p>
+                </div>
+        </footer>
+    </div>
 </body>
 
 </html>
