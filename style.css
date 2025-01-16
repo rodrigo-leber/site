@@ -15,6 +15,12 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
+
 .menu {
     position: fixed;
     height: 100%;
@@ -40,10 +46,12 @@
     color: #f1f1f1;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
 
 .content {
     margin-left: 160px;
