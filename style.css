@@ -1,6 +1,7 @@
 .menu {
-    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     background-color: #333;
     overflow: hidden;
 }
@@ -58,7 +59,6 @@
   }
 
 .content {
-    margin-top: 200px;
     padding: 0px 10px;
 }
 
