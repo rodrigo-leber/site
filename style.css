@@ -40,6 +40,11 @@ form {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: black;
     color: #fff;
@@ -48,9 +53,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
