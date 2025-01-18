@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Rodrigo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,9 +15,21 @@
         <h1>Rodrigo Dias - Marcenaria Criativa</h1>
     </header>
 
+    <nav>
+        <div class=menu id="meu-menu">
+            <a href="#sobre" class= box id="box1">Home</a>
+            <a href="#servicos" class= box id="box2">Serviços</a>
+            <a href="#habilidades" class= box id="box3">Habilidades</a>
+            <a href="#contato" class= box id="box4">Contato</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+    </nav>
+
     <main>
         <section class="content">
-            <h2>Sobre mim</h2>
+            <h2 id="sobre">Sobre mim</h2>
             <img src="IMG_20241111_110906091.jpg" alt="Foto de perfil">
             <p>
                 Olá! Meu nome é Rodrigo Dias, e sou apaixonado por transformar madeira em peças únicas e funcionais.
@@ -31,7 +44,7 @@
             </p>
         </section>
         <section class="content">
-            <h2>Meus serviços</h2>
+            <h2 id="servicos">Meus serviços</h2>
             <img src="baleia.JPG" alt="Tábua de cozinha em formato de baleia">
             <p>Transformo madeira em peças que unem funcionalidade e arte para sua cozinha e decoração.
                 Meu trabalho inclui a criação de tábuas de corte, tigelas, pratos e cumbucas, todas cuidadosamente
@@ -43,7 +56,7 @@
                 com qualidade e beleza.</p>
         </section>
         <section class="content">
-            <h2>Minhas habilidades</h2>
+            <h2 id="habilidades">Minhas habilidades</h2>
             <img src="gatinho.jpg" alt="Retrato de um gato na madeira">
             <p>Minha experiência com marcenaria vai além do simples trabalho com madeira – é uma combinação de técnica,
                 paciência e paixão. Domino processos como corte, modelagem e acabamento de peças, garantindo
@@ -54,7 +67,7 @@
                 detalhe faz com que todas as peças sejam únicas, refletindo minha habilidade e amor pelo ofício.</p>
         </section>
         <section class="content">
-            <h2>Contato</h2>
+            <h2 id="contato">Contato</h2>
             <p class="p-form">Tem um projeto em mente? Entre em contato</p>
 
         <form action="">
