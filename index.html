@@ -4,173 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo Dias</title>
+    <title>Portfólio - Rodrigo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="myScript.js"></script>
 </head>
 
 <body>
-    <div class="menu">
-        <a class="active" href="#sobre">Sobre mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Habilidades e tecnologias</a>
-        <a href="#contato">Contato</a>
-        <a href="https://br.pinterest.com/rodrigotabuas/" target="_blank">Pinterest</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
 
-    <div class="content">
+    <header>
+        <h1>Rodrigo Dias - Marcenaria Criativa</h1>
+    </header>
 
-        <h1>Rodrigo Dias</h1>
-
-        <section id="sobre">
-            <h2 class="title">Sobre mim</h2>
-
-            <img src="IMG_20241111_110906091.jpg" alt="Imagem de foto de perfil" title="imagem de perfil"
-                class="gorila">
-            <p class="sub-gorila">Imagem meramente ilustrativa</p>
-
-            <article>
-
-                <p>
-                    Olá! Meu nome é Rodrigo Dias, e sou apaixonado por transformar madeira em peças únicas e funcionais.
-                    No meu trabalho como marceneiro, crio tábuas de corte, tigelas e outros artigos para cozinha que
-                    combinam utilidade e beleza. Cada peça recebe um toque especial através da técnica de pirogravura,
-                    que permite gravar desenhos exclusivos na madeira, tornando cada criação verdadeiramente única.</p>
-                <p>Atualmente, estou expandindo minhas habilidades ao aprender desenvolvimento front-end, um novo
-                    universo que me ajuda a conectar minha arte ao mundo digital. Esse aprendizado tem sido uma forma
-                    incrível de compartilhar minha paixão e criatividade, permitindo que mais pessoas descubram e
-                    apreciem o que faço. Seja no trabalho com madeira ou no desenvolvimento de um site, minha dedicação
-                    é sempre criar algo que inspire e encante.
-                </p>
-
-            </article>
-
-            <aside class="skills">
-
-                <h3>Habilidades</h3>
-
-                <p>HTML <br>
-                    CSS <br>
-                    JavaScript</p>
-
-            </aside>
-
+    <main>
+        <section class="content">
+            <h2>Sobre mim</h2>
+            <img src="IMG_20241111_110906091.jpg" alt="Foto de perfil">
+            <p>
+                Olá! Meu nome é Rodrigo Dias, e sou apaixonado por transformar madeira em peças únicas e funcionais.
+                No meu trabalho como marceneiro, crio tábuas de corte, tigelas e outros artigos para cozinha que
+                combinam utilidade e beleza. Cada peça recebe um toque especial através da técnica de pirogravura,
+                que permite gravar desenhos exclusivos na madeira, tornando cada criação verdadeiramente única.</p>
+            <p>Atualmente, estou expandindo minhas habilidades ao aprender desenvolvimento front-end, um novo
+                universo que me ajuda a conectar minha arte ao mundo digital. Esse aprendizado tem sido uma forma
+                incrível de compartilhar minha paixão e criatividade, permitindo que mais pessoas descubram e
+                apreciem o que faço. Seja no trabalho com madeira ou no desenvolvimento de um site, minha dedicação
+                é sempre criar algo que inspire e encante.
+            </p>
         </section>
+        <section class="content">
+            <h2>Meus serviços</h2>
+            <img src="baleia.JPG" alt="Tábua de cozinha em formato de baleia">
+            <p>Transformo madeira em peças que unem funcionalidade e arte para sua cozinha e decoração.
+                Meu trabalho inclui a criação de tábuas de corte, tigelas, pratos e cumbucas, todas cuidadosamente
+                feitas à mão. Além disso, utilizo a técnica de pirogravura para personalizar cada peça com padrões
+                exclusivos, garantindo um toque único e especial.</p>
+            <p>Também ofereço peças decorativas com ilustrações detalhadas de pets e animais, feitas com a mesma técnica
+                de pirogravura. Seja para uso diário na cozinha ou como um presente especial, cada peça reflete minha
+                paixão pelo artesanato e o compromisso
+                com qualidade e beleza.</p>
+        </section>
+        <section class="content">
+            <h2>Minhas habilidades</h2>
+            <img src="gatinho.jpg" alt="Retrato de um gato na madeira">
+            <p>Minha experiência com marcenaria vai além do simples trabalho com madeira – é uma combinação de técnica,
+                paciência e paixão. Domino processos como corte, modelagem e acabamento de peças, garantindo
+                durabilidade e qualidade em cada criação.</p>
+            <p>A pirogravura é uma das minhas especialidades, uma técnica que exige precisão e criatividade para
+                transformar cada peça em uma obra de arte única. Também tenho um olhar apurado para o design funcional,
+                equilibrando estética e praticidade, especialmente em artigos para cozinha. Minha dedicação a cada
+                detalhe faz com que todas as peças sejam únicas, refletindo minha habilidade e amor pelo ofício.</p>
+        </section>
+        <section class="content">
+            <h2>Contato</h2>
+            <p class="p-form">Tem um projeto em mente? Entre em contato</p>
 
-        <section id="projetos">
+        <form action="">
 
-            <h2 class="title">Projetos</h2>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" required><br><br>
             
-            <article>
-                <h3>Portifólio</h3>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="telefone">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone"><br><br>
+            
+            <label for="assunto">Assunto: </label>
+            <select name="assunto" id="assunto" required>
+                <option value="orçamento">Orçamento</option>
+                <option value="duvidas">Duvidas"></option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+            
+            <label for="mensagem">Mensagem: </label><br><br>
+            <textarea name="mensagem" id="mensagem" cols="50" rows="20" required></textarea><br><br>
+            
+            <input type="checkbox" name="inscricao" id="inscricao">
+            <label for="inscricao">Deseja receber minha newsletter?</label><br><br>
 
-                <p>
-                    Este é o primeiro site que desenvolvi durante meus estudos de front-end.
-                </p>
-            </article>
+            <input type="submit" value="Enviar mensagem">
 
+        </form>
+
+            <div class="redes-sociais"></div>
+            <h2>Redes Sociais</h2>
+            <p>Confira outras partes do meu trabalho, como fotos e o que estou produzindo atualmente, nas minhas redes
+                sociais!</p>
+            <div class="endereco"></div>
+            <address>
+                Instagram: <a href="https://www.instagram.com/rodrigo.tabuas/" target="_blank">rodrigo.tabuas</a><br><br>
+                Pinterest: <a href="https://br.pinterest.com/rodrigotabuas/" target="_blank">Pinterest</a><br><br>
+                E-mail: <a href="mailto:rodrigo.d.leber@gmail.com">rodrigo.d.leber@gmail.com</a>
+            </address>
         </section>
-
-        <section id=" habilidades">
-
-                <h2 class="title">Habilidades e tecnologias</h2>
-
-    </div>
-
-    <table class="tabela">
-
-        <thead>
-            <tr>
-                <th>Tecnologia</th>
-                <th>Nível</th>
-                <th>Descrição</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th>HTML</th>
-                <th>Iniciante</th>
-                <th>Capaz de criar estruturas de páginas da web semânticas e responsivas.</th>
-            </tr>
-
-            <tr>
-                <th>CSS</th>
-                <th>Intermediário</th>
-                <th>Experiência com flexbox, grid e animações CSS.</th>
-            </tr>
-
-            <tr>
-                <th>JavaScript</th>
-                <th>Básico</th>
-                <th>Desenvolvimento de scripts do lado do cliente para interações.</th>
-            </tr>
-        </tbody>
-
-    </table>
-
-
-    </section>
-
-
+    </main>
 
     <footer>
-
-        <section id="contato">
-
-            <h2 class="title">Contato</h2>
-
-            <p>Tem um projeto em mente? Entre em contato.</p>
-
-            <form action="">
-
-                <label for=" nome">Nome: </label>
-                <input type="text" name="nome" id="nome" required><br><br>
-
-                <label for="email">E-mail: </label>
-                <input type="email" name="email" id="email" required><br><br>
-
-                <label for="telefone">Telefone: </label>
-                <input type="tel" name="telefone" id="telefone"><br><br>
-
-                <label for="assunto">Assunto: </label>
-                <select name="assunto" id="assunto">
-                    <option value="orçamento">Orçamento</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="outro">Outro</option>
-                </select>
-
-                <br><br>
-
-                <label for="mensagem">Mensagem: </label><br><br>
-                <textarea name="mensagem" id="mensagem" cols="50" rows="5" required></textarea>
-
-                <br><br>
-
-                <input type="checkbox" name="insricao" id="insricao">
-                <label for="insricao">Deseja receber minha newsletter? Fique por dentro</label><br><br>
-
-                <input type="submit" value="Enviar mensagem">
-
-                </form>
-
-                <br>
-
-                <div class="endereco">
-                    <address>
-                        E-mail: <a href="mailto:rodrigo.d.leber@gmail.com">rodrigo.d.leber@gmail.com</a>
-                        <br>
-                        Telefone: <a href="tel:+55479999999">(47) 99999-9999</a>
-                    </address>
-        </section>
-
-        <p>Direitos reservado a Rodrigo Dias.</p>
-        </div>
+        <p>&copy; Todos os direitos reservados</p>
     </footer>
-    </div>
+
 </body>
 
 </html>
