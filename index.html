@@ -1,121 +1,165 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- linguagem do site-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Rodrigo</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- codificação do site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsividade do site -->
+    <title>Rodrigo Dias</title> <!-- nome do site -->
+    <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-
-    <header>
-        <h1>Rodrigo Dias - Marcenaria Criativa</h1>
-    </header>
-
-    <nav>
-        <div class=menu id="meu-menu">
-            <a href="#sobre" class= box id="box1">Home</a>
-            <a href="#servicos" class= box id="box2">Serviços</a>
-            <a href="#habilidades" class= box id="box3">Habilidades</a>
-            <a href="#contato" class= box id="box4">Contato</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
+    <nav id="nav-bar">
+        <div id="brand">
+            <a href="#page-content">Rodrigo Dias</a>
         </div>
+        <i class="fa fa-bars nav-toggle"></i>
+        <ul>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#skills">Habilidades & Experiências</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+            </a>
+        </ul>
     </nav>
+    <main id="page-content">
+        <section id="presentation" class="container">
+            <img src="src/Imagem Rodrigo.jpg" alt="Rodrigo Dias">
+            <h1>Rodrigo Dias</h1>
+            <span>Marcenaria Criativa</span>
+        </section>
 
-    <main>
-        <section class="content">
-            <h2 id="sobre">Sobre mim</h2>
-            <img src="IMG_20241111_110906091.jpg" alt="Foto de perfil">
-            <p>
-                Olá! Meu nome é Rodrigo Dias, e sou apaixonado por transformar madeira em peças únicas e funcionais.
-                No meu trabalho como marceneiro, crio tábuas de corte, tigelas e outros artigos para cozinha que
-                combinam utilidade e beleza. Cada peça recebe um toque especial através da técnica de pirogravura,
-                que permite gravar desenhos exclusivos na madeira, tornando cada criação verdadeiramente única.</p>
-            <p>Atualmente, estou expandindo minhas habilidades ao aprender desenvolvimento front-end, um novo
-                universo que me ajuda a conectar minha arte ao mundo digital. Esse aprendizado tem sido uma forma
-                incrível de compartilhar minha paixão e criatividade, permitindo que mais pessoas descubram e
-                apreciem o que faço. Seja no trabalho com madeira ou no desenvolvimento de um site, minha dedicação
-                é sempre criar algo que inspire e encante.
+        <section id="about" class="container">
+            <h1>Sobre mim</h1>
+            <p>Meu nome é Rodrigo Dias, sou de Joinville, Santa Catarina, e minha grande paixão é a marcenaria.
+                Trabalhar com madeira vai além de um ofício para mim – é uma forma de expressão, um modo de transformar
+                matéria-prima em peças que fazem parte da vida das pessoas.
+                <br><br>
+                Cada peça que crio carrega dedicação, técnica e o desejo de entregar algo único. Gosto de explorar
+                novas ideias, experimentar diferentes acabamentos e incorporar novas técnicas ao meu trabalho, sempre
+                buscando evolução e aprimoramento.
+                <br><br>
+                Acredito que um objeto bem-feito carrega histórias e bons momentos. Por isso, minha missão é produzir
+                peças que não sejam apenas funcionais, mas que tragam aconchego, beleza e significado ao dia a dia de
+                quem as utiliza.
             </p>
         </section>
-        <section class="content">
-            <h2 id="servicos">Meus serviços</h2>
-            <img src="baleia.JPG" alt="Tábua de cozinha em formato de baleia">
-            <p>Transformo madeira em peças que unem funcionalidade e arte para sua cozinha e decoração.
-                Meu trabalho inclui a criação de tábuas de corte, tigelas, pratos e cumbucas, todas cuidadosamente
-                feitas à mão. Além disso, utilizo a técnica de pirogravura para personalizar cada peça com padrões
-                exclusivos, garantindo um toque único e especial.</p>
-            <p>Também ofereço peças decorativas com ilustrações detalhadas de pets e animais, feitas com a mesma técnica
-                de pirogravura. Seja para uso diário na cozinha ou como um presente especial, cada peça reflete minha
-                paixão pelo artesanato e o compromisso
-                com qualidade e beleza.</p>
+
+        <section id="skills" class="container">
+            <h1>Habilidades & Experiências</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>Criação de Tábuas de Corte</h2>
+                    <p>Produzo tábuas de cozinha em diferentes estilos, desde modelos simples e funcionais até peças
+                        com designs mais elaborados. Cada tábua é planejada para unir praticidade e estética, atendendo
+                        tanto ao uso diário quanto à decoração do ambiente.
+                        <br><br>
+                        A escolha da madeira é criteriosa, priorizando materiais de alta qualidade que garantem
+                        durabilidade e segurança alimentar. O acabamento é feito com óleo mineral e cera de abelha,
+                        criando uma camada protetora contra umidade e odores. Esse processo assegura que as peças sejam
+                        resistentes, fáceis de manter e ideais para o preparo dos alimentos.
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <h2>Ilustração em Pirogravura</h2>
+                    <p>A pirogravura é uma técnica que utilizo para criar ilustrações detalhadas na madeira, trazendo
+                        mais personalidade e exclusividade às peças. Com um cauterizador, gravo desenhos diretamente na
+                        superfície, resultando em traços precisos e permanentes.
+                        <br><br>
+                        Meu foco está em representar animais, sejam pets ou espécies selvagens, sempre buscando captar
+                        suas formas e expressões com fidelidade. Cada peça é trabalhada com atenção aos detalhes,
+                        tornando-se uma opção decorativa única ou um presente especial para quem é apaixonado pelo seu
+                        bichinho, ou por animais em geral.
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <h2>Prévia Digital dos Produtos</h2>
+                    <p>Para garantir que cada encomenda atenda às expectativas do cliente, utilizo modelos digitais como
+                        prévia do resultado final. Esse processo permite visualizar o design da peça antes da produção,
+                        ajustando detalhes como formato, dimensões e ilustrações.
+                        <br><br>
+                        Os modelos são parte do processo de orçamento, oferecendo uma representação clara do produto
+                        encomendado. Dessa forma, o cliente tem mais segurança na escolha e pode solicitar ajustes antes
+                        da fabricação, garantindo um resultado personalizado e alinhado ao seu gosto.
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <h2>Envio de Produtos</h2>
+                    <p>Minhas peças podem ser enviadas para qualquer região do Brasil, com embalagens projetadas para
+                        garantir que cheguem em perfeito estado. Cada item é cuidadosamente protegido, minimizando
+                        riscos durante o transporte.
+                        <br><br>
+                        Além da segurança, as embalagens são preparadas com capricho, tornando a experiência de
+                        recebê-las ainda mais especial. Dessa forma, quem adquire uma peça, seja para uso próprio ou
+                        para presente, recebe um produto bem acondicionado e pronto para ser apreciado.
+                    </p>
+                </div>
+            </div>
         </section>
-        <section class="content">
-            <h2 id="habilidades">Minhas habilidades</h2>
-            <img src="gatinho.jpg" alt="Retrato de um gato na madeira">
-            <p>Minha experiência com marcenaria vai além do simples trabalho com madeira – é uma combinação de técnica,
-                paciência e paixão. Domino processos como corte, modelagem e acabamento de peças, garantindo
-                durabilidade e qualidade em cada criação.</p>
-            <p>A pirogravura é uma das minhas especialidades, uma técnica que exige precisão e criatividade para
-                transformar cada peça em uma obra de arte única. Também tenho um olhar apurado para o design funcional,
-                equilibrando estética e praticidade, especialmente em artigos para cozinha. Minha dedicação a cada
-                detalhe faz com que todas as peças sejam únicas, refletindo minha habilidade e amor pelo ofício.</p>
+
+        <section id="portfolio" class="container">
+            <h1>Portfólio</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="src/port/pirogravura (1).jpg" alt="Imagem Indisponível">
+                </div>
+                <div class="grid-item">
+                    <img src="src/port/pirogravura (2).jpg" alt="Imagem Indisponível">
+                </div>
+                <div class="grid-item">
+                    <img src="src/port/pirogravura (3).jpg" alt="Imagem Indisponível">
+                </div>
+                <div class="grid-item">
+                    <img src="src/port/pirogravura (4).jpg" alt="Imagem Indisponível">
+                </div>
+                <div class="grid-item">
+                    <img src="src/port/pirogravura (5).jpg" alt="Imagem Indisponível">
+                </div>
+                <div class="grid-item">
+                    <img src="src/port/pirogravura (6).jpg" alt="Imagem Indisponível">
+                </div>
+                <div class="grid-item">
+                    <img src="src/port/pirogravura (7).jpg" alt="Imagem Indisponível">
+                </div>
+                <div class="grid-item">
+                    <img src="src/port/pirogravura (8).jpg" alt="Imagem Indisponível">
+                </div>
+            </div>
         </section>
-        <section class="content">
-            <h2 id="contato">Contato</h2>
-            <p class="p-form">Tem um projeto em mente? Entre em contato</p>
 
-        <form action="">
-
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" required><br><br>
-            
-            <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email" required><br><br>
-            
-            <label for="telefone">Telefone: </label>
-            <input type="tel" name="telefone" id="telefone"><br><br>
-            
-            <label for="assunto">Assunto: </label>
-            <select name="assunto" id="assunto" required>
-                <option value="orçamento">Orçamento</option>
-                <option value="duvidas">Dúvidas></option>
-                <option value="outro">Outro</option>
-            </select><br><br>
-            
-            <label for="mensagem">Mensagem: </label><br><br>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="20" required></textarea><br><br>
-            
-            <input type="checkbox" name="inscricao" id="inscricao">
-            <label for="inscricao">Deseja receber minha newsletter?</label><br><br>
-
-            <input type="submit" value="Enviar mensagem">
-
-        </form>
-
-            <div class="redes-sociais"></div>
-            <h2>Redes Sociais</h2>
-            <p>Confira outras partes do meu trabalho, como fotos e o que estou produzindo atualmente, nas minhas redes
-                sociais!</p>
-            <div class="endereco"></div>
-            <address>
-                Instagram: <a href="https://www.instagram.com/rodrigo.tabuas/" target="_blank">rodrigo.tabuas</a><br><br>
-                Pinterest: <a href="https://br.pinterest.com/rodrigotabuas/" target="_blank">Pinterest</a><br><br>
-                E-mail: <a href="mailto:rodrigo.d.leber@gmail.com">rodrigo.d.leber@gmail.com</a><br><br>
-                Telefone <a href="tel:+55(47)996254602">(47) 99625-4602</a>
-            </address>
+        <section id="contact" class="container">
+            <form id="contact-form">
+                <h1>Contato</h1>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <input type="text" placeholder="Nome" id="name">
+                    </div>
+                    <div class="grid-item">
+                        <input type="email" placeholder="E-mail" id="email">
+                    </div>
+                </div>
+                <div class="grid-container.one-column">
+                    <div class="grid-item">
+                        <input type="text" placeholder="Assunto" id="subject">
+                    </div>
+                    <div class="grid-item">
+                        <textarea name="message" placeholder="Mensagem" id="message"></textarea>
+                    </div>
+                    <div class="grid-item">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
-
     <footer>
-        <p>&copy; Todos os direitos reservados</p>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
     </footer>
-
+    <script src="src/script.js"></script>
 </body>
 
 </html>
